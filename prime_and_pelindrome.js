@@ -1,8 +1,9 @@
-let factor=0;
-let num=7;
-let flag=false;
+let count = 0;
+let num=27;
+
 for(let i=1; i<=num; i++){
 if(num%i==0){
-flag=true;
+count++;
 }
 }
+(count == 2) ? console.log(true) : console.log(false); 

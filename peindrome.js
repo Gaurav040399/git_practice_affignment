@@ -1,11 +1,16 @@
-
-let str="naman";
-let bag="";
-for(let j=str.length-1;j>=0; j--){
-bag+=str[j];
+let str = "nama";
+let ans = false;
+let j = Math.floor(str.length/2); 
+for(let i=0; i<=j; i++){
+    if(str[i] == str[str.length-i-1]){
+        ans = false;
+    }else{
+        ans = true;
+        break;
+    }
 }
-if(str==bag){
-console.log("it is Pelindrome");
+if(ans){
+    console.log(true);
 }else{
-console.log("it is not Pelindrome")
+    console.log(false)
 }
